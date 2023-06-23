@@ -1,0 +1,58 @@
+# Node.js API with MongoDB
+
+This is a sample Node.js API project that uses MongoDB for data storage and implements basic security measures.
+
+## Installation
+
+1. Clone the repository:
+
+ 
+   git clone https://github.com/itsivali/node-api-mongodb.git
+
+2. Navigate to the project directory:
+
+   cd node-api-mongodb
+
+3. Install dependencies:
+   npm install
+
+
+4. Start the server:
+   npm start
+
+
+The server will be running at http://localhost:3000.
+
+## Features
+
+    User registration: Register a new user with a unique username and a password.
+    User login: Authenticate users with their username and password using bcrypt for password hashing.
+    Protected routes: Access protected routes by providing a JWT token obtained upon successful login.
+
+## API Endpoints
+
+    POST /register: Register a new user. Requires a JSON body with a username and password field.
+    POST /login: Log in a user. Requires a JSON body with a username and password field. Returns a JWT token upon successful login.
+    GET /protected: Access a protected endpoint. Requires an Authorization header with a valid JWT token.
+
+## Security Measures
+
+    Password hashing: User passwords are securely hashed using bcrypt before being stored in the database.
+    JWT authentication: User authentication is implemented using JSON Web Tokens (JWT) for stateless and secure authentication.
+    Rate limiting: API endpoints are protected by rate limiting to prevent abuse and brute-force attacks.
+    Input validation: User input is validated and sanitized using the express-validator library to prevent common security vulnerabilities.
+
+## Technologies Used
+
+    Node.js
+    Express.js
+    MongoDB
+    Mongoose
+    bcrypt
+    JSON Web Tokens (JWT)
+
+## License
+
+This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "api-mongodb",
+  "version": "1.0.0",
+  "description": "nodejs api with mongodb with cors enabled",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsivali/node-api-mongodb.git"
+  },
+  "keywords": [
+    "nodejs-api"
+  ],
+  "author": "Willis Ivali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsivali/node-api-mongodb/issues"
+  },
+  "homepage": "https://github.com/itsivali/node-api-mongodb#readme"
+}
